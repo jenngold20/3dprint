@@ -1,0 +1,45 @@
+.image-container {
+  width: 200px; 
+  height: 200px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  animation: fadeImages 5s linear infinite; 
+  opacity: 0;
+  z-index: 1;
+}
+
+@keyframes fadeImages {
+  0%, 25% {
+    opacity: 1;
+  }
+  26%, 100% {
+    opacity: 0;
+  }
+}
+
+.image:nth-child(1) {
+  animation-delay: 0s; 
+}
+
+.image:nth-child(2) {
+  animation-delay: 1s; 
+}
+
+.image:nth-child(3) {
+  animation-delay: 2s; 
+}
+
+.image:nth-child(4) {
+  animation-delay: 3s; 
+}
+
+.image:nth-child(5) {
+  animation-delay: 4s; 
+}
